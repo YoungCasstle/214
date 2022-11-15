@@ -9,7 +9,7 @@ public class AnimalsCage {
     private final Animal animal;
     private final Timer timer;
     @Autowired
-    public AnimalsCage(@Qualifier("dogBean")Animal animal,@Qualifier("timerBean")Timer timer){
+    public AnimalsCage(@Qualifier("dogBean")Animal animal,Timer timer){
         this.animal = animal;
         this.timer = timer;
     }
@@ -25,4 +25,3 @@ public class AnimalsCage {
         System.out.println("________________________");
     }
 }
-//
